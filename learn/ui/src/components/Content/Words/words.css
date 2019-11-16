@@ -1,0 +1,43 @@
+.container-fluid{
+    background: linear-gradient(to bottom, #009999 0%, #66ff99 100%);
+    padding: 5%;
+}
+
+.card-columns { visibility: hidden; }
+/* Prevents :hover from triggering in the gaps between items */
+
+.card-columns > * { visibility: visible; }
+/* Brings the child items back in, even though the parent is `hidden` */
+
+.card-columns > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+.card-columns:hover > * { opacity: 0.4; transform: scale(0.9); }
+/* Fade out all items when the parent is hovered */
+
+.card-columns > *:hover { 
+  background: cadetblue;
+  color: white;
+  opacity: 1; 
+  transform: scale(1); 
+  transition-delay: 0ms, 0ms; }
+/* Fade in the currently hovered item */
+
+
+.card-columns > * {
+  background: white;
+  padding: 1em;
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+#searchbar{
+  display: flex;
+  height: 60px;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}

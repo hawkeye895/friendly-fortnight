@@ -1,0 +1,12 @@
+.header{
+    background-color: crimson;
+    height: 150px;
+    line-height: 150px;
+     display: flex;
+     justify-content: center;
+      align-items: center;
+}
+
+.header:hover{
+    background-color: cadetblue;
+}

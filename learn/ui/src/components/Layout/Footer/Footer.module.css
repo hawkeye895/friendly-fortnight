@@ -1,0 +1,10 @@
+.footer{
+    height: 60px;
+    text-align: center;
+    background: cadetblue;
+    padding: 20px;
+}
+
+.footer:hover{
+    background: crimson;
+}
